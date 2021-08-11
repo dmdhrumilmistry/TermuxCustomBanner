@@ -9,7 +9,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name = 'TermuxCustomBanner',
-    version = '1.0.0',
+    version = '1.0.1',
     license='MIT License',
     description = 'Creates custom banner for termux',
     long_description=long_description,
