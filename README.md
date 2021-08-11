@@ -1,7 +1,7 @@
 # TermuxCustomBanner
 - Helps user to create custom banner with various fonts and colors on Termux terminal.
 
-<!-- ![Image](https://github.com/dmdhrumilmistry/pyhtools/blob/main/.images/Windows_CLI-main.png) -->
+![Image](https://github.com/dmdhrumilmistry/TermuxCustomBanner/blob/main/.images/%231_TermuxCustomBanner.png?raw=true)
 
 ### Installation
 
