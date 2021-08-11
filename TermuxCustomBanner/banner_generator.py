@@ -1,4 +1,3 @@
-import re
 import TermuxCustomBanner.colors as colors
 import pyfiglet
 from sys import exit
@@ -18,12 +17,13 @@ COLOR_MENU = f'''
 
 
 def clear():
-    call('cls', shell=True)
+    call('clear', shell=True)
 
 
 def exit_program():
     print(f'{colors.RED}[!] Exiting!!')
     exit()
+
 
 def continue_prompt(text=''):
     '''
@@ -104,6 +104,9 @@ def start():
     print(banner)
 
     if continue_prompt('with this banner'):
-        pass
+        SH_data = f'#!/bin/bash\n\necho -e "{banner}"'
+        print(SH_data)
+        with open('motd.sh', 'w') as motd:
+            motd.write(SH_data)
     else:
         exit_program()
