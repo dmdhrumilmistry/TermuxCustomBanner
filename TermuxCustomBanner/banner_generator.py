@@ -106,7 +106,7 @@ def start():
     if continue_prompt('with this banner'):
         SH_data = f'#!/bin/bash\n\necho -e "{banner}"'
         print(SH_data)
-        with open('motd.sh', 'w') as motd:
+        with open('/data/data/com.termux/files/usr/etc/profile.d/TermuxCustomBanner.sh', 'w') as motd:
             motd.write(SH_data)
     else:
         exit_program()
