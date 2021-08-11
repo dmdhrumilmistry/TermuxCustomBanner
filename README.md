@@ -32,8 +32,6 @@
    ```
    python setup.py install
    ```
-
-### Using PyPi
    
 ### Start TermuxCustomBanner
 
@@ -43,7 +41,7 @@
 
 ### Dependencies
 
-   **`PHT`** requires following programs/scripts to run properly -
+   **`TermuxCustomBanner`** requires following programs/scripts to run properly -
    - `Python`
       - `pyfiglet`
       - `subprocess`
