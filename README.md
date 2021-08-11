@@ -54,7 +54,7 @@
 - Fork the repo, update script and create a Pull Request
        
        
- ### Follow Me on:
+ ### Connect with me:
   
   <p align ="left">
     <a href = "https://github.com/dmdhrumilmistry" target="_blank"><img src = "https://img.shields.io/badge/Github-dmdhrumilmistry-333"></a>
