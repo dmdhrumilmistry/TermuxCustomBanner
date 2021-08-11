@@ -2,7 +2,8 @@ import TermuxCustomBanner.colors as colors
 import pyfiglet
 from sys import exit
 from subprocess import call
-from os import remove, exists
+from os import remove
+from os.path import exists
 
 
 COLOR_MENU = f'''
