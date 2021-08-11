@@ -30,7 +30,7 @@
 
 6. Install TermuxCustomBanner
    ```
-   python setup.py install
+   python -m pip install -e .
    ```
    
 ### Start TermuxCustomBanner
