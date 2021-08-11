@@ -32,7 +32,22 @@
    ```
    python -m pip install -e .
    ```
+
+#### Using pip
+
+1. Open terminal
+
+2. Install python and git packages
+   ```
+   pkg install python git -y
+   ```
    
+3. clone the repository to your machine
+   ```
+   pip install TermuxCustomBanner>=1.0.1
+   ```
+
+
 ### Start TermuxCustomBanner
 
  ```
