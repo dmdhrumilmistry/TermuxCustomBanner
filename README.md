@@ -42,10 +42,11 @@
    pkg install python git -y
    ```
    
-3. clone the repository to your machine
+3. Install TermuxCustomBanner
    ```
    pip install TermuxCustomBanner>=1.0.1
    ```
+   > `Note : avoid using v1.0.0`
 
 
 ### Start TermuxCustomBanner
