@@ -1,3 +1,3 @@
-import TermuxCustomBanner.functions as func
+import TermuxCustomBanner.banner_generator as bangen
 
-func.start()
+bangen.start()
