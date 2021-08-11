@@ -1,7 +1,7 @@
 # TermuxCustomBanner
 - Helps user to create custom banner with various fonts and colors on Termux terminal.
 
-<!-- ![Image](https://github.com/dmdhrumilmistry/pyhtools/blob/main/.images/Windows_CLI-main.png) -->
+![Image](https://github.com/dmdhrumilmistry/TermuxCustomBanner/blob/main/.images/%231_TermuxCustomBanner.png?raw=true)
 
 ### Installation
 
@@ -32,8 +32,6 @@
    ```
    python setup.py install
    ```
-
-### Using PyPi
    
 ### Start TermuxCustomBanner
 
@@ -43,7 +41,7 @@
 
 ### Dependencies
 
-   **`PHT`** requires following programs/scripts to run properly -
+   **`TermuxCustomBanner`** requires following programs/scripts to run properly -
    - `Python`
       - `pyfiglet`
       - `subprocess`
@@ -56,7 +54,7 @@
 - Fork the repo, update script and create a Pull Request
        
        
- ### Follow Me on:
+ ### Connect with me:
   
   <p align ="left">
     <a href = "https://github.com/dmdhrumilmistry" target="_blank"><img src = "https://img.shields.io/badge/Github-dmdhrumilmistry-333"></a>
