@@ -2,6 +2,7 @@ import TermuxCustomBanner.colors as colors
 import pyfiglet
 from sys import exit
 from subprocess import call
+from os import remove, exists
 
 
 COLOR_MENU = f'''
@@ -17,10 +18,16 @@ COLOR_MENU = f'''
 
 
 def clear():
+    '''
+    clears screen
+    '''
     call('clear', shell=True)
 
 
 def exit_program():
+    '''
+    exits program
+    '''
     print(f'{colors.RED}[!] Exiting!!')
     exit()
 
@@ -65,6 +72,9 @@ def set_font(text:str):
 
 
 def get_color(text:str):
+    '''
+    returns color
+    '''
     colors_list = [colors.BLACK, colors.RED, colors.GREEN, colors.YELLOW, colors.BLUE, colors.MAGENTA, colors.CYAN, colors.LIGHT_GRAY]
     print(COLOR_MENU)
     try:
@@ -81,6 +91,9 @@ def get_color(text:str):
 
 
 def get_font_with_style(message:str):
+    '''
+    returns message in font style and color
+    '''
     response = input(message)
     updated_response = set_font(response)
     color = get_color(updated_response)
@@ -88,6 +101,9 @@ def get_font_with_style(message:str):
 
 
 def get_banner():
+    '''
+    creates banner
+    '''
     head_str, head_color = get_font_with_style(f'{colors.YELLOW}[+] Enter Heading for banner : {colors.RESET}')
     text_str = input(f'{colors.YELLOW}[+] Enter text for banner : {colors.RESET}')
     text_color = get_color(text_str)
@@ -96,6 +112,9 @@ def get_banner():
 
 
 def start():
+    '''
+    starts creating banner
+    '''
     clear()
     banner = get_banner()
 
@@ -104,9 +123,17 @@ def start():
     print(banner)
 
     if continue_prompt('with this banner'):
-        SH_data = f'#!/bin/bash\n\necho -e "{banner}"'
-        print(SH_data)
+        print(f'{colors.YELLOW}[*] Generating Files...{colors.RESET}')
+        SH_data = f'#!/bin/bash\n\necho -e "\n{banner}\n"'
+        
+        # remove motd if exists
+        if exists('/data/data/com.termux/files/usr/etc/motd'):
+            remove('/data/data/com.termux/files/usr/etc/motd')
+
+        # create new shell script to run when terminal is used
         with open('/data/data/com.termux/files/usr/etc/profile.d/TermuxCustomBanner.sh', 'w') as motd:
             motd.write(SH_data)
+        print(f'{colors.YELLOW}[*] Banner has been applied.{colors.RESET}')
+
     else:
         exit_program()
