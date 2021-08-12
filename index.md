@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+## Introduction
 
-You can use the [editor on GitHub](https://github.com/dmdhrumilmistry/TermuxCustomBanner/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Change default motd banner on Termux Application. TermuxCustomBanner helps user to setup a custom banner on their Termux Application with various fonts and colors.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### View simple banner generated using TermuxCustomBanner
+![SimpleBanner](https://github.com/dmdhrumilmistry/TermuxCustomBanner/blob/main/.images/%231_TermuxCustomBanner.png?raw=true))
 
-### Markdown
+## Installation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Using pip
+  ```
+  pip install TermuxCustomBanner
+  ```
+  
+### Using Github
+1. Open terminal
 
-```markdown
-Syntax highlighted code block
+2. Install python and git packages
+   ```
+   pkg install python git -y
+   ```
 
-# Header 1
-## Header 2
-### Header 3
+3. clone the repository to your machine
+   ```
+   git clone https://github.com/dmdhrumilmistry/TermuxCustomBanner.git
+   ```
+4. Change directory
+   ```
+   cd TermuxCustomBanner
+   ```
 
-- Bulleted
-- List
+5. Install setuptools
+   ```
+   python -m pip install setuptools
+   ```
 
-1. Numbered
-2. List
+6. Install TermuxCustomBanner
+   ```
+   python -m pip install -e .
+   ```
 
-**Bold** and _Italic_ and `Code` text
+## Usage
 
-[Link](url) and ![Image](src)
-```
+- Start TermuxCustomBanner
+  ```
+  python -m TermuxCustomBanner
+  ```
+- Enter Banner Heading
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- Choose font and color for heading
 
-### Jekyll Themes
+- Enter text for the banner
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dmdhrumilmistry/TermuxCustomBanner/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Choose color for text
 
-### Support or Contact
+- Confirm Banner
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Start new session or terminal to verify changes
+
